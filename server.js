@@ -4,5 +4,9 @@ var app = express();
 app.get('/', function(request, response){
     response.send('Hello MGT-656!');
 });
+app.get('/sparkling-goldfish', function(request, response){
+    response.send('sparkling-goldfish');
+});
+
 
 app.listen(process.env.PORT || 4000);
